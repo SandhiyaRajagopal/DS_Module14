@@ -8,12 +8,9 @@ To write a C program to delete three elements from the filled circular queue.
 2. Check if the queue is empty (front == -1).If empty, print “Queue Underflow” (or return an error value) and exit.
 3. Otherwise, store the element at position items[front] into a variable element.
 4.  Check if the queue has only one element (front == rear).
-
-If yes, reset front = -1 and rear = -1 (queue becomes empty).
+     If yes, reset front = -1 and rear = -1 (queue becomes empty).
 5. If more than one element is present, move the front pointer forward using circular increment:
-
-front = (front + 1) % SIZE.
-
+      front = (front + 1) % SIZE.
 6.Return the value of element.
 7. End
 
